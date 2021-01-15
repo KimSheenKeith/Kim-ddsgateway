@@ -30,4 +30,9 @@ $user1Service){
  //
  return $this->successResponse($this->user1Service->obtainUsers1());
  }
+
+ public function delete($id)
+ {
+ return $this->successResponse($this->user1Service->deleteUser1($id));
+ }
 }
